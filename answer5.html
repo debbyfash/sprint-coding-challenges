@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <nav id="navPanel">
+        <ul>
+            <li><a href="index.html">Questions</a></li>
+            <li><a href="answer1.html">Answer1</a></li>
+            <li><a href="answer2.html">Answer2</a></li>
+            <li><a href="answer3.html">Answer3</a></li>
+            <li><a href="answer4.html">Answer4</a></li>
+            <li><a href="answer5.html">Answer5</a></li>
+            <li><a href="answer6.html">Answer6</a></li>
+            <li><a href="answer7.html">Answer7</a></li>
+            <li><a href="answer8.html">Answer8</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        let question1 = parseInt(prompt("Please Enter any Number!"));
+        let question2 = prompt("Please do you want to compute the multiple or the sum").toUpperCase();
+        var sum = 0;
+        var multiple = 1;
+
+        if(question2 == "SUM"){
+        for (var i = 0; i <= question1; i++){
+            sum =  sum + i ;
+            }
+        document.write(`The answer is ${sum}`);        
+        }
+        
+        else if(question2 == "MULTIPLE") {
+        for (var i = 1; i <= question1; i++){
+            
+            multiple = multiple * i;
+        }
+        document.write(`The answer is ${multiple}`);        
+        }
+    
+
+    
+    
+    </script>
+
+    
+</body>
+</html>

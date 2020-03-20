@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <nav id="navPanel">
+        <ul>
+            <li><a href="index.html">Questions</a></li>
+            <li><a href="answer1.html">Answer1</a></li>
+            <li><a href="answer2.html">Answer2</a></li>
+            <li><a href="answer3.html">Answer3</a></li>
+            <li><a href="answer4.html">Answer4</a></li>
+            <li><a href="answer5.html">Answer5</a></li>
+            <li><a href="answer6.html">Answer6</a></li>
+            <li><a href="answer7.html">Answer7</a></li>
+            <li><a href="answer8.html">Answer8</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        leapYear = (num) => {
+	currentYear = new Date().getFullYear()
+	document.write(`The Next ${num } leap years are: <br>`)
+	for (lp = 0; lp < num; currentYear++) {
+		if (currentYear % 4 !== 0) {
+			continue ;
+		}
+		else if (currentYear % 100 !== 0) {
+			document.write(currentYear + "<br>")			
+			lp++;
+		}
+		else if (currentYear % 4 !== 0) {
+			continue;
+		}
+		else {
+			document.write(currentYear + "<br>")
+			lp++;
+		}
+	}
+}
+
+leapYear(20)
+
+    </script>
+
+    
+</body>
+</html>

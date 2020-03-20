@@ -1,0 +1,11 @@
+.jumbotron{
+    background-image: url(../images/ab1.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+
+.D{
+    border: green;
+}

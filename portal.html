@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+</head>
+<body>
+    <section class="jumbotron">
+        <div class="container">
+            <h1>Student Portal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor, facere. Eligendi temporibus fugit vitae hic eaque dolor ullam rem at totam tempore a, 
+                odio ipsum libero sequi alias dolore quas.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Student Form</h1>
+                <p>Please fill in your details correctly.</p>
+                
+                <form id="sudentFrm" >
+                    <div class="form-row">
+                        <div class="col-md-12 form-group">
+                            <label>First Name</label>
+                            <input type="text" id="first" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 form-group">
+                            <label >Last Name</label>
+                            <input type="text" id="last" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 form-group">
+                            <label >Gender</label>
+                            <select  id="gender" class="form-control">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row ">
+                        <div class="col-md-12 form-group ">
+                            <label>Date of Birth</label>
+                            <input type="text" placeholder="dd/mm/yy" id="date"  class="form-control">
+                            <label class="D" id="displayDate"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="name@example.com" id="email" class="form-control">
+                            <label class="E" id="displayEmail"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row ">
+                        <div class="col-md-12 form-group">
+                            <label>Telephone Number</label>
+                            <input type="text" placeholder="+234......"id="tel" class="form-control">
+                            <label class="T" id="displayTel"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row ">
+                        <div class="col-md-12 form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Password" id="pass" class="form-control">
+                            <label class="p" id="displayPass"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row ">
+                        <div class="col-md-12 form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" id="Confirm" class="form-control">
+                            <label class="c" id="displayConfirm"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-5 form-group">
+                            <button class="btn btn-success" id="btn" >Submit<span class="fa fa-play"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script src="js/portal.js"></script>
+    
+</body>
+</html>
